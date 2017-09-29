@@ -21,8 +21,9 @@ public class Test1 {
         MailSender sender = (MailSender) actx.getBean("mailSender");
         SimpleMailMessage mailMessage = (SimpleMailMessage) actx.getBean("mailMessage");
         mailMessage.setSubject("你好");
-        mailMessage.setText("这个是一个通过Spring框架来发送邮件的小程序");
+        mailMessage.setText("这个是一个通过Spring框架来qinshuisdisfishfis发送邮件的小程序");
         mailMessage.setTo("1205395120@qq.com");
         sender.send(mailMessage);
+        
     }
 }
